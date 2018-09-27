@@ -849,7 +849,7 @@ class User(object):
         self.username = username
         user_data = self._cork._store.users[username]
         self.role = user_data['role']
-        self.description = user_data['desc']
+        self.description = user_data['description']
         self.email_addr = user_data['email_addr']
         self.level = self._cork._store.roles[self.role]
 
