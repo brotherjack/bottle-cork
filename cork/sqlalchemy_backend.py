@@ -163,7 +163,7 @@ class SqlAlchemyBackend(base_backend.Backend):
             Column('role', ForeignKey(roles_tname + '.role')),
             Column('hash', String(256), nullable=False),
             Column('email_addr', String(128)),
-            Column('desc', String(128)),
+            Column('description', String(128)),
             Column('creation_date', String(128), nullable=False),
             Column('last_login', String(128), nullable=False)
 
@@ -178,7 +178,7 @@ class SqlAlchemyBackend(base_backend.Backend):
             Column('role', ForeignKey(roles_tname + '.role')),
             Column('hash', String(256), nullable=False),
             Column('email_addr', String(128)),
-            Column('desc', String(128)),
+            Column('description', String(128)),
             Column('creation_date', String(128), nullable=False)
         )
 
